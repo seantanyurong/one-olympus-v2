@@ -49,12 +49,12 @@ function Header() {
         <nav className='z-99 flex grow pt-16 sm:pt-0'>
           <ul className='flex grow justify-end flex-wrap items-center'>
             <li>
-              <BlueLink addClassName='px-3' link='#projects' primaryText='Browse past projects' size='small' />
+              <BlueLink addClassName='px-3' link='#projects' primaryText='Browse projects' size='small' />
             </li>
             <li>
               <Button
                 size='small'
-                primaryText='Book free consultation'
+                primaryText='Book consultation'
                 link='https://calendly.com/seantanyurong/one-olympus'
               />
             </li>

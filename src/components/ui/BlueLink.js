@@ -1,19 +1,19 @@
-import React from "react";
+import React from 'react';
 
 const BlueLink = (props) => {
   const renderSwitch = (param) => {
     switch (param) {
-      case "small":
-        return "";
+      case 'small':
+        return '';
 
-      case "medium":
-        return "text-xl";
+      case 'medium':
+        return 'text-xl';
 
-      case "large":
-        return "text-2xl";
+      case 'large':
+        return 'text-2xl';
 
       default:
-        return "";
+        return '';
     }
   };
 
@@ -22,8 +22,7 @@ const BlueLink = (props) => {
       href={props.link}
       className={`inline-block cursor-pointer font-semibold text-link-main hover:text-link-hover underline ${
         props.addClassName
-      } ${renderSwitch(props.size)}`}
-    >
+      } ${renderSwitch(props.size)}`}>
       {props.primaryText}
     </a>
   );

@@ -53,7 +53,7 @@ const Progress = () => {
         <ul className='mt-3.5 text-sm font-normal grid grid-cols-2'>
           {links.map((obj, index) => {
             return (
-              <li className='col-span-2 lg:col-span-1'>
+              <li className='col-span-2 lg:col-span-1' key={obj.primaryText}>
                 <span className='text-gray-400 text-md'>• </span>
                 <a href={obj.link} target='_blank' rel='noreferrer'>
                   {obj.primaryText}
@@ -68,7 +68,7 @@ const Progress = () => {
         <ul className='mt-3.5 text-sm font-normal'>
           {links.map((obj, index) => {
             return (
-              <li>
+              <li key={obj.primaryText}>
                 <span className='text-gray-400 text-md'>• </span>
                 <a href={obj.link} target='_blank' rel='noreferrer'>
                   {obj.primaryText}
@@ -127,7 +127,8 @@ const Progress = () => {
                   <InlineCallout content='MOST POPULAR' />
                 </div>
                 <p className='text-xl mt-2 font-light'>
-                  We will design and develop a small business website for you. It will have a minimum of 5 pages.
+                  We will design, develop and maintain a small business website for a monthly fee. It will be built by
+                  us end to end.
                 </p>
                 {renderLinkContent(geekLinks, true)}
               </>

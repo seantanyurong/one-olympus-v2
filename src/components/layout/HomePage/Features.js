@@ -33,7 +33,7 @@ const Features = () => {
       <div className='mt-8 grid grid-cols-9 gap-y-16 sm:gap-16 w-full'>
         {FeatureContent.map((feature, index) => {
           return (
-            <div className='col-span-9 lg:col-span-3'>
+            <div className='col-span-9 lg:col-span-3' key={index}>
               <Feature
                 primaryText={feature.primaryText}
                 bodyText={feature.bodyText}

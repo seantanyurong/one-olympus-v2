@@ -1,5 +1,4 @@
 import React from 'react';
-import BlueLink from './BlueLink';
 import { Cloudinary } from '@cloudinary/url-gen';
 import { AdvancedImage, responsive, placeholder } from '@cloudinary/react';
 
@@ -14,20 +13,18 @@ const Feature = (props) => {
 
   return (
     <div className='text-center'>
-      <div className='group cursor-pointer'>
+      <a href={props.link} target='_blank' rel='noreferrer' className='group cursor-pointer'>
         <AdvancedImage
           className='mx-auto drop-shadow-xl rounded-lg group-hover:-translate-y-1 duration-150 border-highlight-darkEggshell border-3 group-hover:border-solid  group-hover:border-highlight-blue'
           cldImg={myImage}
           plugins={[responsive({ steps: 200 }), placeholder({ mode: 'blur' })]}
           alt={props.primaryText}
         />
-        <BlueLink
-          size='medium'
-          link={props.link}
-          primaryText={props.primaryText}
-          addClassName='mt-6 group-hover:text-link-hover'
-        />
-      </div>
+        <p
+          className={`text-xl inline-block cursor-pointer font-semibold text-link-main hover:text-link-hover underline mt-6 group-hover:text-link-hover`}>
+          {props.primaryText}
+        </p>
+      </a>
       <p className='mt-2'>{props.bodyText}</p>
     </div>
   );
