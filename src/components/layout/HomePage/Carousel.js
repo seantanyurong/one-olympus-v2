@@ -1,26 +1,26 @@
-import React from "react";
-import { AdvancedImage } from "@cloudinary/react";
-import { Cloudinary } from "@cloudinary/url-gen";
-import { FreeMode, Autoplay, Pagination, Navigation } from "swiper";
+import React from 'react';
+import { AdvancedImage } from '@cloudinary/react';
+import { Cloudinary } from '@cloudinary/url-gen';
+import { FreeMode, Autoplay, Pagination, Navigation } from 'swiper';
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import "swiper/css";
+import 'swiper/css';
 
 const cld = new Cloudinary({
   cloud: {
-    cloudName: "dfhxocdgi",
+    cloudName: 'du5ataark',
   },
 });
 
-const myImage = cld.image("dungeon-house/heroBanner");
+const myImage = cld.image('dungeon-house/heroBanner');
 
 const Carousel = () => {
   return (
-    <section className="mt-16">
-      {" "}
+    <section className='mt-16'>
+      {' '}
       <Swiper
         spaceBetween={20}
         slidesPerView={4}
@@ -32,74 +32,37 @@ const Carousel = () => {
           disableOnInteraction: false,
         }}
         modules={[FreeMode, Autoplay, Pagination, Navigation]}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-      >
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)}>
         <SwiperSlide>
-          <AdvancedImage
-            className="rounded-lg"
-            cldImg={myImage}
-            alt="heroBanner"
-          />
+          <AdvancedImage className='rounded-lg' cldImg={myImage} alt='heroBanner' />
         </SwiperSlide>
         <SwiperSlide>
-          <AdvancedImage
-            className="rounded-lg"
-            cldImg={myImage}
-            alt="heroBanner"
-          />
-        </SwiperSlide>{" "}
+          <AdvancedImage className='rounded-lg' cldImg={myImage} alt='heroBanner' />
+        </SwiperSlide>{' '}
         <SwiperSlide>
-          <AdvancedImage
-            className="rounded-lg"
-            cldImg={myImage}
-            alt="heroBanner"
-          />
-        </SwiperSlide>{" "}
+          <AdvancedImage className='rounded-lg' cldImg={myImage} alt='heroBanner' />
+        </SwiperSlide>{' '}
         <SwiperSlide>
-          <AdvancedImage
-            className="rounded-lg"
-            cldImg={myImage}
-            alt="heroBanner"
-          />
+          <AdvancedImage className='rounded-lg' cldImg={myImage} alt='heroBanner' />
         </SwiperSlide>
         <SwiperSlide>
-          <AdvancedImage
-            className="rounded-lg"
-            cldImg={myImage}
-            alt="heroBanner"
-          />
-        </SwiperSlide>{" "}
+          <AdvancedImage className='rounded-lg' cldImg={myImage} alt='heroBanner' />
+        </SwiperSlide>{' '}
         <SwiperSlide>
-          <AdvancedImage
-            className="rounded-lg"
-            cldImg={myImage}
-            alt="heroBanner"
-          />
+          <AdvancedImage className='rounded-lg' cldImg={myImage} alt='heroBanner' />
         </SwiperSlide>
         <SwiperSlide>
-          <AdvancedImage
-            className="rounded-lg"
-            cldImg={myImage}
-            alt="heroBanner"
-          />
+          <AdvancedImage className='rounded-lg' cldImg={myImage} alt='heroBanner' />
         </SwiperSlide>
         <SwiperSlide>
-          <AdvancedImage
-            className="rounded-lg"
-            cldImg={myImage}
-            alt="heroBanner"
-          />
+          <AdvancedImage className='rounded-lg' cldImg={myImage} alt='heroBanner' />
         </SwiperSlide>
         <SwiperSlide>
-          <AdvancedImage
-            className="rounded-lg"
-            cldImg={myImage}
-            alt="heroBanner"
-          />
+          <AdvancedImage className='rounded-lg' cldImg={myImage} alt='heroBanner' />
         </SwiperSlide>
         <SwiperSlide>
-          <AdvancedImage cldImg={myImage} alt="heroBanner" />
+          <AdvancedImage cldImg={myImage} alt='heroBanner' />
         </SwiperSlide>
       </Swiper>
     </section>

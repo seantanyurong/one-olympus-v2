@@ -1,42 +1,39 @@
-import React from "react";
-import SectionWrapper from "../../ui/SectionWrapper";
-import Feature from "../../ui/Feature";
-// import Feature1Img from "../../../assets/HomePage/Feature1.webp";
-// import Feature2Img from "../../../assets/HomePage/Feature2.webp";
-// import Feature3Img from "../../../assets/HomePage/Feature3.webp";
+import React from 'react';
+import SectionWrapper from '../../ui/SectionWrapper';
+import Feature from '../../ui/Feature';
 
 const Features = () => {
   const FeatureContent = [
     {
-      primaryText: "Productive co-working in the day",
+      primaryText: 'The 100 Club',
       bodyText:
-        "In the day, Dungeon House is a comfortable and productive environment with both public desks and private rooms for remote workers.",
-      image: "dungeon-house/feature-1",
-      link: "#",
+        'A private mastermind community for founders in Singapore. We buildt a website and membership platform with a directory, onboarding system and more.',
+      image: '100club',
+      link: 'https://the100club.io/',
     },
     {
-      primaryText: "Playful tabletop gaming in the night",
+      primaryText: 'Engroup Holdings',
       bodyText:
-        "In the night, Dungeon House becomes an epic gaming environment with daily events supporting Magic the Gathering, Dungeons and Dragons, Warhammer, and more.",
-      image: "dungeon-house/feature-2",
-      link: "#",
+        'A holding company that owns and operates a portfolio of businesses in the funeral industry. We handled the design, copywriting and development of the website.',
+      image: 'Engroup',
+      link: 'https://www.engroup.sg/',
     },
     {
-      primaryText: "Private community of geeks",
+      primaryText: 'Teh Peng Club',
       bodyText:
-        "We ensure that Dungeon House is a safe space for geeks to be geeks, but we also filter members to ensure that every individual is fun to be around - no salt here.",
-      image: "dungeon-house/feature-3",
-      link: "#",
+        'They help telegram communities engage members by matching them for 1:1 chats every month. We were brought in to help design and develop a landing page within 3 days.',
+      image: 'TehPengClub',
+      link: 'https://www.tehpengclub.com/',
     },
   ];
 
   return (
-    <SectionWrapper topMargin={true} id="features">
-      <h2>A community that combines work and play.</h2>
-      <div className="mt-8 grid grid-cols-9 gap-y-16 sm:gap-16 w-full">
+    <SectionWrapper topMargin={true} id='projects'>
+      <h2>Here are some of our past projects.</h2>
+      <div className='mt-8 grid grid-cols-9 gap-y-16 sm:gap-16 w-full'>
         {FeatureContent.map((feature, index) => {
           return (
-            <div className="col-span-9 lg:col-span-3">
+            <div className='col-span-9 lg:col-span-3'>
               <Feature
                 primaryText={feature.primaryText}
                 bodyText={feature.bodyText}
