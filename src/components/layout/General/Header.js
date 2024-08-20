@@ -13,7 +13,7 @@ function Header() {
     },
   });
 
-  const myImage = cld.image('image_2_pburzz');
+  const myImage = cld.image('Group_283_vequd1');
 
   return (
     <SectionWrapper
