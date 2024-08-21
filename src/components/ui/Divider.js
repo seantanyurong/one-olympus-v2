@@ -1,10 +1,9 @@
-import React from "react";
+import React from 'react';
 
 const Divider = (props) => {
   return (
     <span
-      className={`block bg-gradient-to-r from-[#ff7d0f] to-[#ffcd05] h-1 w-40 rounded-full ${props.addClassName}`}
-    ></span>
+      className={`block bg-gradient-to-r from-[#5AB2F7] to-[#5CE1E6] h-1 w-40 rounded-full ${props.addClassName}`}></span>
   );
 };
 

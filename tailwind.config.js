@@ -4,21 +4,22 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          main: '#2da530',
-          hover: '#19911c',
+          main: '#5AB2F7',
+          hover: '#279AF4',
         },
         link: { main: '#1e64e6', hover: '#1d2d35' },
-        text: { main: '#1d2d35', hover: '#1d2d35' },
+        text: { main: '#212C33', hover: '#1d2d35' },
         highlight: {
-          eggshell: '#fcf4f2',
-          darkEggshell: '#f2eae8',
+          shadow: '#EBF9FB',
+          eggshell: '#FEFEFE',
+          darkEggshell: '#D9F4F6',
           darkerEggshell: '#FEF7F0',
           darkestEggshell: '#F4EDE6',
-          lightYellow: '#ffffe1',
-          yellow: '#FFE42D',
-          sunlight: '#ffcd05',
-          orange: '#ff7d0f',
-          pink: '#ff5c7a',
+          lightYellow: '#EBF9FB',
+          yellow: '#C8EEF3',
+          sunlight: '#5CE1E6',
+          orange: '#5AB2F7',
+          pink: '#65B0F8',
           blue: '#1E64E6',
         },
         gray: {

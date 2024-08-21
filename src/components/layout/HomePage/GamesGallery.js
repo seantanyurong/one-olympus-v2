@@ -79,7 +79,7 @@ function GamesGallery() {
       const feature2 = featureList[i + 1];
       rows.push(
         <div className='flex gap-2 md:gap-3 justify-center mb-2 md:mb-3' key={feature1.text + feature2.text}>
-          <div className='w-full shrink bg-highlight-eggshell p-4 rounded-md rounded-l-none'></div>
+          <div className='w-full shrink bg-highlight-shadow p-4 rounded-md rounded-l-none'></div>
           <p className='shrink-0 border-highlight-darkEggshell shadow-highlight-eggshell border-2 px-3 p-1 md:p-4 rounded-md text-sm md:text-2xl font-bold text-text-main'>
             {feature1.textFirst ? (
               <>
@@ -106,7 +106,7 @@ function GamesGallery() {
               </>
             )}
           </p>
-          <div className='w-full shrink bg-highlight-eggshell p-4 rounded-md rounded-r-none'></div>
+          <div className='w-full shrink bg-highlight-shadow p-4 rounded-md rounded-r-none'></div>
         </div>,
       );
     }
